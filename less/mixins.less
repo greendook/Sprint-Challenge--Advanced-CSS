@@ -1,1 +1,27 @@
 // Mixins Here
+.custom-btn(@bg-color: black, @width: 130px, @font-color: white) {
+    display: block;
+    background-color: black;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: @font-color;
+}
+
+.custom-layout(@justify, @align) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fonts {
+    color: black;
+}
